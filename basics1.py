@@ -167,3 +167,70 @@ if x>237:
 else:
     print("Please enter value higher than 237")
 
+#Write a Python program that prints out all colors from color_list_1 that are not present in color_list_2.
+color_list_1 = set(["White", "Black", "Red"])
+color_list_2 = set(["Red", "Green"])\
+for i in color_list_2:
+    if i not in color_list_1:
+        print(i)
+
+#Triangle Area Calculator
+b = 3
+h = 2
+print("area is : ", 0.5*b*h)
+
+#GCD
+a = 65
+b = 18
+while b:
+    a,b=b,a%b
+    print(a,end=" ")#STEPS
+    print(b,end=" ")#STEPS
+    print("\n")
+print(a)
+
+#LCM
+a = 3
+b = 4
+temp_a = a
+temp_b = b
+while b:
+    a,b=b,a%b
+print((temp_a*temp_b)/a)
+
+#Write a Python program to sum three given integers. However, if two values are equal, the sum will be zero.
+a = 1
+b = 2
+c = 1
+if a==b or b==c or c==a:
+    print("0")
+else:
+    print(a+b+c)
+
+#Write a Python program to sum two given integers. However, if the sum is between 15 and 20 it will return 20.
+a = 0
+b = 15
+sum = a+b
+if sum>=15 and sum<=20:
+    print(20)
+else:
+    print(sum)
+
+#Write a Python program that returns true if the two given integer values are equal or their sum or difference is 5.
+def checker(x,y):
+    s = x+y
+    d = x-y
+    if x==y or s==5 or d==5:
+        return True
+print(checker(10,5))
+
+#Write a Python program to add two objects if both objects are integers.
+def checker(x,y):
+    if not isinstance(x, int) and isinstance(y, int):
+        print("Should be integers")
+    else:
+        return x+y
+print(checker(10.2,5))
+
+
+
