@@ -232,5 +232,14 @@ def checker(x,y):
         return x+y
 print(checker(10.2,5))
 
+#Write a Python program to calculate the distance between the points (x1, y1) and (x2, y2).
+x1 = int(input("Enter x1: "))
+x2 = int(input("Enter x2 : "))
+y1 = int(input("Enter y1 : "))
+y2 = int(input("Enter y2 : "))
+print("Distance is : ",((((x2-x1)**2)+((y2-y1)**2))**0.5),"Unit")
+
+
+
 
 
